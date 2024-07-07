@@ -1,47 +1,47 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
+    "Name": "Back to London BEXLEY brunette",
+    "Description": "WE CAN DO IT! A smartly made for any purpose and occasion, timeless pop art backpack with a message. Made of cotton in combination with high quality faux leather..",
+    "Price": 186,
     "PictureUrl": "images/products/sb-ang1.png",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
   {
-    "Name": "Green Angular Board 3000",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 150,
+    "Name": "Back to London QUINN",
+    "Description": "TELL THE STORY THE WAY YOU WANT IT TO GO. Smartly made for any purpose and occasion, timeless pop art backpack with a message. Made of cotton in combination with high qualitsy faux leather.",
+    "Price": 186,
     "PictureUrl": "images/products/sb-ang2.png",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Name": "Back to London MALANI",
+    "Description": "NO, I WON`T. Smartly made for any purpose and occasion, timeless pop art backpack with a message. Made of cotton in combination with high quality faux leather..",
     "Price": 180,
     "PictureUrl": "images/products/sb-core1.png",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
   {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 300,
+    "Name": "Back to London NALA",
+    "Description": "I SAW SHOES I FELL IN LOVE WITH…THEY SMILED AT ME BECAUSE THEY KNEW. Smartly made for any purpose and occasion, timeless pop art backpack with a message. Made of cotton in combination with high quality faux leather..",
+    "Price": 186,
     "PictureUrl": "images/products/sb-core2.png",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
   {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
+    "Name": "Back to London MIKAYLA",
+    "Description": "IT`S NICE TO MEET YOU. I AM NO NAME. Smartly made for any purpose and occasion, timeless pop art backpack with a message. Made of cotton in combination with high quality faux leather..",
+    "Price": 18,
     "PictureUrl": "images/products/sb-react1.png",
     "ProductTypeId": 1,
     "ProductBrandId": 4
   },
   {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Name": "Love in Paris BLAIR",
+    "Description": "I AM NOT A GIRL NEXT DOOR. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 120,
     "PictureUrl": "images/products/sb-ts1.png",
     "ProductTypeId": 1,
@@ -56,8 +56,8 @@
     "ProductBrandId": 2
   },
   {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Name": "Love in Paris HAZEL",
+    "Description": "FOLLOW ME FOR MORE ADVICE. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 8,
     "PictureUrl": "images/products/hat-react1.png",
     "ProductTypeId": 2,
@@ -72,72 +72,72 @@
     "ProductBrandId": 4
   },
   {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Name": "Love in Paris LUPE",
+    "Description": "BEING SO TANGOISH SOMETIMES. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 18,
     "PictureUrl": "images/products/glove-code1.png",
     "ProductTypeId": 4,
     "ProductBrandId": 3
   },
   {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Name": "Love in Paris AMBER",
+    "Description": "INSIDE THIS PaERSON LIES REMARKABLE ME. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 15,
     "PictureUrl": "images/products/glove-code2.png",
     "ProductTypeId": 4,
     "ProductBrandId": 3
   },
   {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Name": "Love in Paris MALANI",
+    "Description": "NO, I WON`T. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 16,
     "PictureUrl": "images/products/glove-react1.png",
     "ProductTypeId": 4,
     "ProductBrandId": 4
   },
   {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Name": "Love in Paris NALA",
+    "Description": "I SAW SHOES I FELL IN LOVE WITH…THEY SMILED AT ME BECAUSE THEY KNEW. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 14,
     "PictureUrl": "images/products/glove-react2.png",
     "ProductTypeId": 4,
     "ProductBrandId": 4
   },
   {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Name": "Love in Paris ARIELLA",
+    "Description": "FEELING KINDA RETROGRADE TODAY.Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 250,
     "PictureUrl": "images/products/boot-redis1.png",
     "ProductTypeId": 3,
     "ProductBrandId": 6
   },
   {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Name": "Love in Paris NALA",
+    "Description": "I SAW SHOES I FELL IN LOVE WITH…THEY SMILED AT ME BECAUSE THEY KNEW. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 189.99,
     "PictureUrl": "images/products/boot-core2.png",
     "ProductTypeId": 3,
     "ProductBrandId": 2
   },
   {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Name": "Love in Paris CRYSTAL",
+    "Description": "I DON`T THINK SO.Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 199.99,
     "PictureUrl": "images/products/boot-core1.png",
     "ProductTypeId": 3,
     "ProductBrandId": 2
   },
   {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Name": "Love in Paris MIKAYLA",
+    "Description": "IT`S NICE TO MEET YOU. I AM NO NAME. Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 150,
     "PictureUrl": "images/products/boot-ang2.png",
     "ProductTypeId": 3,
     "ProductBrandId": 1
   },
   {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Name": "Love in Paris ELYSE",
+    "Description": "HOW TO SPELL MAGIC? Smartly made for any purpose and occasion, timeless pop art bag with a message. Made of cotton in combination with high qualitsy faux leather.",
     "Price": 180,
     "PictureUrl": "images/products/boot-ang1.png",
     "ProductTypeId": 3,

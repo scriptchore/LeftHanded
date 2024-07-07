@@ -1,26 +1,26 @@
 [
   {
     "Id": 1,
-    "Name": "Angular"
+    "Name": "LeftHandBags"
   },
   {
     "Id": 2,
-    "Name": "NetCore"
+    "Name": "LeftHandBags1"
   },
   {
     "Id": 3,
-    "Name": "VS Code"
+    "Name": "LeftHandBags2"
   },
   {
     "Id": 4,
-    "Name": "React"
+    "Name": "LeftHandBags3"
   },
   {
     "Id": 5,
-    "Name": "Typescript"
+    "Name": "LeftHandBags4"
   },
   {
     "Id": 6,
-    "Name": "Redis"
+    "Name": "LeftHandBags5"
   }
 ]
