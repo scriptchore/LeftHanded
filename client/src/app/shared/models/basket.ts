@@ -19,3 +19,10 @@ export interface Basket {
     id = cuid();
     items: BasketItem[] = [];
   }
+
+
+  export interface BasketTotals {
+    shipping: number;
+    subTotal: number;
+    total: number;
+  }
