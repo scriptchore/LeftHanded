@@ -11,7 +11,7 @@ namespace INFRASTRUCTURE.Data
         {
             
         }
-        public StoreContext(DbContextOptions options) : base(options)
+        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         {
         }
 
