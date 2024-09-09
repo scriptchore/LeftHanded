@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using API.Errors;
 using INFRASTRUCTURE.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -34,6 +35,15 @@ namespace API.Controllers
 
             return Ok();
         }
+
+         [HttpGet("testauth")]
+         [Authorize]
+        public ActionResult<string> GetSecretText()
+        {
+           
+            return "secret stuff";
+        }
+
 
         [HttpGet("serverError")]
         public ActionResult GetServerError()
