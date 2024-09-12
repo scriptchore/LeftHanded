@@ -20,8 +20,7 @@ namespace API.Extensions
         {
 
 
-                        services.AddEndpointsApiExplorer();
-                        services.AddSwaggerGen();
+                   
 
                         services.AddDbContext<StoreContext>(opt => {
                         opt.UseSqlite(config.GetConnectionString("lefthanded"));
