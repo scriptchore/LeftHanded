@@ -21,7 +21,16 @@ export class AccountService {
   constructor(private http: HttpClient, private router: Router) { }
 
   loadCurrentUser(token: string){
-    let headers = new HttpHeaders
+    let headers = new HttpHeaders();
+
+    headers = headers.set('Authorization', `Bearer ${token}`);
+
+    return this.http.get<User>(this.baseUrl + 'account', {headers}).pipe(
+      map(user => {
+        localStorage.setItem('token', user.token);
+        this.currentUserSource.next(user);
+      })
+    )
   }
 
 
