@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using CORE.Entities;
+using CORE.Entities.OrderAggregate;
 
 
 namespace INFRASTRUCTURE.Data
@@ -30,6 +31,13 @@ namespace INFRASTRUCTURE.Data
                 var productData = File.ReadAllText("../INFRASTRUCTURE/Data/Seeddata/products.json");
                 var products = JsonSerializer.Deserialize<List<Products>>(productData);
                 context.Products.AddRange(products);
+            }
+
+            if(!context.DeliveryMethods.Any())
+            {
+                var deliveryData = File.ReadAllText("../INFRASTRUCTURE/Data/Seeddata/delivery.json");
+                var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(deliveryData);
+                context.DeliveryMethods.AddRange(methods);
             }
 
             if(context.ChangeTracker.HasChanges()) await context.SaveChangesAsync();

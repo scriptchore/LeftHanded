@@ -3,6 +3,7 @@ using API.DTOs;
 using AutoMapper;
 using CORE.Entities;
 using CORE.Entities.Identity;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace API.Helpers
 {
@@ -17,6 +18,7 @@ namespace API.Helpers
              CreateMap<Address, AddressDto>().ReverseMap();
              CreateMap<CustomerBasketDto, CustomerBasket>();
              CreateMap<BasketItemDto, BasketItem>();
+             CreateMap<AddressDto, CORE.Entities.OrderAggregate.Address>();
             
         }
     }
