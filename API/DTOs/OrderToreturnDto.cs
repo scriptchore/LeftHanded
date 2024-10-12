@@ -5,7 +5,7 @@ using CORE.Entities.OrderAggregate;
 
 namespace API.DTOs
 {
-    public class OrderToreturnDto
+    public class OrderToReturnDto
     {
         public int Id { get; set; }
         public string BuyerEmail { get; set;}

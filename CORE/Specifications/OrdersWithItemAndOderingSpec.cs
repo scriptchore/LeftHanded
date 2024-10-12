@@ -16,10 +16,10 @@ namespace CORE.Specifications
             AddOrderByDesc(o => o.OrderDate);
         }
 
-        public OrdersWithItemAndOderingSpec(int id, string email) : base(o => o.BuyerEmail == email 
-        && o.Id == id)
+        public OrdersWithItemAndOderingSpec(int id, string email) 
+            : base(o => o.Id == id && o.BuyerEmail == email)
         {
-            AddInclude(o => o.OrderDate);
+            AddInclude(o => o.OrderItems);
             AddInclude(o => o.DeliveryMethod);
         }
     }
