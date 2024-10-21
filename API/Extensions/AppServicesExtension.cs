@@ -32,6 +32,8 @@ namespace API.Extensions
                             return ConnectionMultiplexer.Connect(options);
                         });
 
+                        services.AddSingleton<IResponseCacheService, ResponseCacheService>();
+
 
                         services.AddScoped<IBasketRepository, BasketRepository>();
                         services.AddScoped<IOrderService, OrderService>();
