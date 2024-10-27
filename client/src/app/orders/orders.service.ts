@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { envvironment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 import { Order } from '../shared/models/order';
 
 @Injectable({
@@ -8,7 +8,7 @@ import { Order } from '../shared/models/order';
 })
 export class OrdersService {
 
-  baseUrl = envvironment.apiUrl;
+  baseUrl = environment.apiUrl;
 
 
   constructor(private http: HttpClient) { }

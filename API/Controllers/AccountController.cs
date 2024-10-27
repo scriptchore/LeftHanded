@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using API.DTOs;
@@ -13,6 +14,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
+using MailKit.Net.Smtp;
+using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
 namespace API.Controllers
 {
@@ -129,6 +133,31 @@ namespace API.Controllers
 
             if (!result.Succeeded) return  BadRequest(new ApiResponse(400));
 
+
+            //var confirmationEmailCode = await _UserManager.GenerateEmailConfirmationTokenAsync(applicationUser);
+            var subject = "Welcome to LeftHanded";
+
+
+            var sender = SendEmail(new EmailNotificationVM
+            {
+                Body = $"Dear {user.Displayname}" +
+                @"Welcome to LeftHanded. 
+             <br/>Kindly look through our Array of Brightly colored, LeftHanded and Trendy designs.<br/>
+                We look forward to see you make a fashion statement by browsing our catalogue of Bags, Wallets,.....<br/>
+                <br/>We hope to get you as excited as we are to present you with an array of fashion.
+                <br/>
+                Cheers <br/>
+                LeftHanded team
+               "
+                ,
+                //Body = $"Hi {applicationUser.FirstName}, <br/>Here is your ApplicationNo: {appNomba}." +
+                //$"<br>Use the link below to verify/create a PayerId in order to initialize processing: .  <br/> <a //href=\"{_settingsApp.VerifyPidUrl}\">{_settingsApp.VerifyPidUrl}</a>",
+                Subject = subject,
+                To = user.Email
+
+
+            });
+
             return new UserDto
             {
                 DisplayName = user.Displayname,
@@ -137,7 +166,41 @@ namespace API.Controllers
 
             };
         }
-        
-        
+
+
+        public async Task<bool> SendEmail(EmailNotificationVM emailNotificationVM)
+        {
+            bool isSent = false;
+            var message = new MimeMessage();
+            message.From.Add(new MailboxAddress("LeftHanded", "john.onwuegbuzie@osoftit.com"));
+            message.To.Add(new MailboxAddress("New User", emailNotificationVM.To));
+            message.Subject = emailNotificationVM.Subject;
+            message.Body = new TextPart("html")
+            {
+                Text = emailNotificationVM.Body
+            };
+
+            using (var client = new SmtpClient())
+            {
+                try
+                {
+                    client.Connect("mercury-plesk.hkdns.host", 587, false);
+                    client.Authenticate("john.onwuegbuzie@osoftit.com", "Feragamo@13");
+                    client.Send(message);
+                    client.Disconnect(true);
+                    isSent = true;
+                }
+                catch (Exception ex)
+                {
+                    var msg = ex.StackTrace;
+                    throw;
+                }
+
+            }
+
+            return isSent;
+        }
+
+
     }
 }

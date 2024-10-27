@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { map, of, ReplaySubject } from 'rxjs';
-import { envvironment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 import { Address, User } from '../shared/models/user';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AccountService {
 
-  baseUrl = envvironment.apiUrl;
+  baseUrl = environment.apiUrl;
 
   private currentUserSource = new ReplaySubject<User | null>(1);
 

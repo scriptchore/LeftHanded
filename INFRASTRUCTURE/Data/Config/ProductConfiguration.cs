@@ -12,7 +12,7 @@ namespace INFRASTRUCTURE.Data.Config
     {
         public void Configure(EntityTypeBuilder<Products> builder)
         {
-            builder.Property(p => p.Id).IsRequired();
+            //builder.Property(p => p.Id).IsRequired();
              builder.Property(p => p.Name).IsRequired();
               builder.Property(p => p.Description).IsRequired();
                builder.Property(p => p.Price).HasColumnType("decimal(18,2)");

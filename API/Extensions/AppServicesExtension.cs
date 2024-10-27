@@ -23,7 +23,7 @@ namespace API.Extensions
                    
 
                         services.AddDbContext<StoreContext>(opt => {
-                        opt.UseSqlite(config.GetConnectionString("lefthanded"));
+                        opt.UseSqlServer(config.GetConnectionString("lefthanded"));
                         });
 
                         services.AddSingleton<IConnectionMultiplexer>(c =>

@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { envvironment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 import { DeliveryMethod } from '../shared/models/deliveryMethods';
 import { map, of, ReplaySubject } from 'rxjs';
 import { User } from '../shared/models/user';
@@ -15,7 +15,7 @@ export class CheckoutService {
 
   currentUser$ = this.currentUserSource.asObservable();
 
-  baseUrl = envvironment.apiUrl;
+  baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
