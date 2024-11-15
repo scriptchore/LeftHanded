@@ -34,8 +34,8 @@ namespace INFRASTRUCTURE.Data
             base.OnModelCreating(modelBuilder); 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            if(Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
-            {
+            //if(Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
+            //{
                 foreach(var entityType in modelBuilder.Model.GetEntityTypes())
                 {
                     var properties = entityType.ClrType.GetProperties().Where(p => p.PropertyType == typeof(decimal));
@@ -46,7 +46,7 @@ namespace INFRASTRUCTURE.Data
                         .HasConversion<double>();
                     }
                 }
-            }
+            //}
         }
     }
 }

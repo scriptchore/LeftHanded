@@ -4,15 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using CORE.Entities;
 using CORE.Interfaces;
+using INFRASTRUCTURE.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace INFRASTRUCTURE.Data
 {
     public class ProductRepository : IProductRepository
     {
-        public StoreContext _Context { get; }
+        public AppIdentityDbContext _Context { get; }
 
-        public ProductRepository(StoreContext context)
+        public ProductRepository(AppIdentityDbContext context)
         {
             _Context = context;
             

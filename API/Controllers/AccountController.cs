@@ -17,6 +17,10 @@ using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using MailKit.Net.Smtp;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
+using CORE.Entities.OrderAggregate;
+using INFRASTRUCTURE.Data.Config;
+using SharedLib;
+using Address = CORE.Entities.Identity.Address;
 
 namespace API.Controllers
 {
@@ -137,8 +141,9 @@ namespace API.Controllers
             //var confirmationEmailCode = await _UserManager.GenerateEmailConfirmationTokenAsync(applicationUser);
             var subject = "Welcome to LeftHanded";
 
+            
 
-            var sender = SendEmail(new EmailNotificationVM
+            var sender = _tokenService.SendEmail(new EmailNotificationVM 
             {
                 Body = $"Dear {user.Displayname}" +
                 @"Welcome to LeftHanded. 
@@ -167,39 +172,10 @@ namespace API.Controllers
             };
         }
 
+        
 
-        public async Task<bool> SendEmail(EmailNotificationVM emailNotificationVM)
-        {
-            bool isSent = false;
-            var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("LeftHanded", "john.onwuegbuzie@osoftit.com"));
-            message.To.Add(new MailboxAddress("New User", emailNotificationVM.To));
-            message.Subject = emailNotificationVM.Subject;
-            message.Body = new TextPart("html")
-            {
-                Text = emailNotificationVM.Body
-            };
 
-            using (var client = new SmtpClient())
-            {
-                try
-                {
-                    client.Connect("mercury-plesk.hkdns.host", 587, false);
-                    client.Authenticate("john.onwuegbuzie@osoftit.com", "Feragamo@13");
-                    client.Send(message);
-                    client.Disconnect(true);
-                    isSent = true;
-                }
-                catch (Exception ex)
-                {
-                    var msg = ex.StackTrace;
-                    throw;
-                }
-
-            }
-
-            return isSent;
-        }
+       
 
 
     }

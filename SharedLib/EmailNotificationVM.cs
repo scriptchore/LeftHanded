@@ -1,4 +1,6 @@
-﻿namespace API.DTOs
+﻿using System;
+
+namespace SharedLib
 {
     public class EmailNotificationVM
     {

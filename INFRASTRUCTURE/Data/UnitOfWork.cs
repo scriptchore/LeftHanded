@@ -5,16 +5,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using CORE.Entities;
 using CORE.Interfaces;
+using INFRASTRUCTURE.Identity;
 
 namespace INFRASTRUCTURE.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly StoreContext _context;
+        private readonly AppIdentityDbContext _context;
 
         private Hashtable _repositories;
 
-        public UnitOfWork(StoreContext context)
+        public UnitOfWork(AppIdentityDbContext context)
         {
             this._context = context;
         }

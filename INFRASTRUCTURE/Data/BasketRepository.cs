@@ -14,6 +14,7 @@ namespace INFRASTRUCTURE.Data
         private readonly IDatabase _database;
         public BasketRepository(IConnectionMultiplexer redis)
         {
+            //redis = ConnectionMultiplexer.Connect("redis-11523.c12.us-east-1-4.ec2.redns.redis-cloud.com:11523,password=C8nCpOJaz8d3ujkoqqfoELQa4c5tfYxp");
             _database = redis.GetDatabase();
         }
         public async Task<bool> DeleteBasketAsync(string basketId)

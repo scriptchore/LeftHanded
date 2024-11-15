@@ -5,14 +5,15 @@ using System.Threading.Tasks;
 using CORE.Entities;
 using CORE.Interfaces;
 using CORE.Specifications;
+using INFRASTRUCTURE.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace INFRASTRUCTURE.Data
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly StoreContext _context;
-        public GenericRepository(StoreContext context)
+        private readonly AppIdentityDbContext _context;
+        public GenericRepository(AppIdentityDbContext context)
         {
             _context = context;
             

@@ -1,26 +1,26 @@
 [
   {
-    
+    "Id": 1,
     "Name": "BACKPACK"
   },
   {
-    
+    "Id": 2,
     "Name": "PURSE"
   },
   {
-    
+    "Id": 3,
     "Name": "BAG"
   },
   {
-    
+    "Id": 4,
     "Name": "HANDBAG"
   },
   {
-    
+    "Id": 5,
     "Name": "WALLET"
   },
   {
-    
+    "Id": 6,
     "Name": "JEWELRY"
   }
 ]

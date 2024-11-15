@@ -59,7 +59,7 @@ app.MapFallbackToController("Index", "Fallback");
 
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
-var context = services.GetRequiredService<StoreContext>();
+//var context = services.GetRequiredService<StoreContext>();
 var identityContext = services.GetRequiredService<AppIdentityDbContext>();
 var userManger = services.GetRequiredService<UserManager<AppUser>>();
 
@@ -67,9 +67,9 @@ var logger = services.GetRequiredService<ILogger<Program>>();
 
 try
 {
-    await context.Database.MigrateAsync();
-    await identityContext.Database.MigrateAsync();
-    await StoreContextSeed.SeedAsync(context);
+    //await context.Database.MigrateAsync();
+    //await identityContext.Database.MigrateAsync();
+    await StoreContextSeed.SeedAsync(identityContext);
     await AppIdentityDbContextSeed.SeedUsersAsync(userManger);
 }
 catch(Exception ex)

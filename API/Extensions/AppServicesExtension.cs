@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using API.Errors;
 using CORE.Interfaces;
 using INFRASTRUCTURE.Data;
+using INFRASTRUCTURE.Identity;
 using INFRASTRUCTURE.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,14 +23,17 @@ namespace API.Extensions
 
                    
 
-                        services.AddDbContext<StoreContext>(opt => {
-                        opt.UseSqlServer(config.GetConnectionString("lefthanded"));
+                        services.AddDbContext<AppIdentityDbContext>(opt => {
+                        opt.UseSqlServer(config.GetConnectionString("IdentityConnection"));
                         });
 
                         services.AddSingleton<IConnectionMultiplexer>(c =>
                         {
                             var options = ConfigurationOptions.Parse(config.GetConnectionString("Redis"));
-                            return ConnectionMultiplexer.Connect(options);
+
+                            var res = ConnectionMultiplexer.Connect(options);
+
+                            return res;
                         });
 
                         services.AddSingleton<IResponseCacheService, ResponseCacheService>();
