@@ -38,9 +38,16 @@
               "node_modules/ngx-spinner/animations/timer.css",
               "node_modules/ngx-spinner/animations/pacman.css",
               "node_modules/ngx-toastr/toastr.css",
-              "src/styles.scss"
+              "node_modules/swiper/swiper-bundle.min.css",
+              "src/styles.scss",
+              "src/index3556.css"
+    
             ],
-            "scripts": []
+            "scripts": [
+
+              "src/assets/js/jquery.min.js",
+                "src/assets/js/typed.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,12 +69,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "5kb"
                 }
               ],
               "outputHashing": "all"
@@ -117,12 +124,17 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
+              
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/index3556.css"
             ],
-            "scripts": []
+            "scripts": [
+                "src/assets/jquery.min.js",
+                "src/assets/typed.min.js"
+            ]
           }
         }
       }

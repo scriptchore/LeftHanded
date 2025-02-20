@@ -7,3 +7,198 @@ img{
     height: 600px;
     width: 100%;
 }
+
+ .headerbox {
+    margin: auto;
+}
+
+.center, .centered {
+    text-align: center;
+}
+
+.heading {
+    font-size: 38px;
+    color: #f8f8f8;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7) !important;
+    line-height: 38px;
+}
+
+.heading, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rockwell';
+}
+
+.subheading {
+    font-size: 23px;
+    color: #aaa59f;
+    margin: 10px 0 0 0;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7) !important;
+}
+
+ .order {
+    background-color: #f07124;
+    width: 220px;
+    border-radius: 4px;
+    margin: 25px auto 0 auto;
+    color: #ffffff;
+    display: block;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2) !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 19px;
+}
+
+ .order {
+    animation: colorchange 2s infinite;
+    -webkit-animation: colorchange 2s infinite;
+    -moz-animation: colorchange 2s infinite;
+}
+
+.wrapper { 
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wrapper,
+app-index,
+.featured {
+    margin: 0;
+    padding: 0;
+}
+
+.words{
+    position: relative;
+    top: -420px;
+    margin-bottom: 0;
+
+}
+
+.scroll-downs {
+    margin: 40px auto 0 auto;
+    width: 16px;
+    height: 67px;
+}
+
+.carousel-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+app-index {
+    margin-top: 0;
+    padding-top: 0;
+    display: block; /* Ensures it follows block behavior */
+}
+
+
+/* Centering Content */
+.image-section .container {
+    max-width: 1280px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the section */
+    padding: 0 20px; /* Adds some space on smaller screens */
+}
+
+/* Header Styling */
+.image-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.image-section{
+    margin-bottom: 40px;
+}
+
+.first-row{
+  margin-bottom: 40px;
+}
+
+/* First row: Large Image */
+.first-row img {
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+/* Second row: Two smaller images side by side */
+.second-row {
+    display: flex;
+    gap: 20px; /* Space between images */
+}
+
+.second-row img {
+    width: calc(50% - 10px); /* Equal width with gap adjustment */
+    height: 250px; /* Adjust for smaller height */
+    object-fit: cover;
+}
+
+/* Style for all images */
+.rounded {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.rounded:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+body{
+    background: #fafafa;
+}
+
+/* Section Wrapper */
+.parallax-section {
+    width: 100%;
+    text-align: center;
+}
+
+/* Parallax Images */
+.parallax-image {
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Enables the parallax effect */
+}
+
+/* First Image */
+.image1 {
+    background-image: url('../../assets/images/paralax1.jpg'); /* Replace with your image */
+}
+
+/* Second Image */
+.image2 {
+    background-image: url('../../assets/images/paralax2.jpg'); /* Replace with your image */
+}
+
+/* Content between the images */
+.parallax-content {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.parallax-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.parallax-content p {
+    font-size: 1.2rem;
+    color: #666;
+}

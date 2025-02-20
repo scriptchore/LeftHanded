@@ -1,0 +1,148 @@
+<footer id="footer" class="site-footer">
+    <div class="footer-top">
+        <div class="footer-top-main">
+          <div class="footer-follow-us">
+            <h4>FOLLOW US</h4>
+            <a href="#">
+              <img alt="Instagram" src="assets/images/insta.svg" />
+            </a>
+            <a href="#">
+              <img alt="Facebook" src="assets/images/fb.svg" />
+            </a>
+           
+            <a href="#">
+              <img alt="TikTok" src="assets/images/tiktok.svg" />
+            </a>
+          </div>
+          <div class="footer-app-desktop">
+            <div class="footer-app-words">
+              <h1 class="footer-app-title">Download LeftHanded store App</h1>
+              <p class="footer-app-content">Get access to app exclusive offer!</p>
+            </div>
+            <div class="footer-app-stores">
+              <a target="_blank" href="#">
+                <img alt="Google Play" src="assets/images/goog.svg" />
+              </a>
+              <a target="_blank" href="#">
+                <img alt="App Store" src="assets/images/app.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="footer-container">
+      <ul class="footer-nav">
+                  <li class="footer-nav-item">
+            <a
+              class="footer-nav-title"
+              [ngClass]="{ show: viewNav === 'nav-0' }"
+              (click)="toggleNav('nav-0')"
+            >Customer Service</a>
+                          <ul class="footer-nav-sub">
+                                  <li>
+                    <a href="#" class="footer-nav-link">Service Hours:</a>
+                                                                  <p class="footer-nav-text">Monday-Friday 9AM to 6PM</p>
+                                                            </li>
+                                  <li>
+                    <a href="#" class="footer-nav-link">Phone:</a>
+                                                                  <p class="footer-nav-text">+385 000 xxx 000 (First Choice)</p>
+                                              <p class="footer-nav-text">+385 000 vvv xxx 000</p>
+                                                            </li>
+                                 
+                                  <li>
+                    <a href="#" class="footer-nav-link">WhatsApp:</a>
+                                                                  <p class="footer-nav-text">+385 000 vvv xxx 0000/ +385 000 vvv xxx 000</p>
+                                                            </li>
+                              </ul>
+                      </li>
+                  <li class="footer-nav-item">
+            <a
+              class="footer-nav-title"
+              [ngClass]="{ show: viewNav === 'nav-1' }"
+              (click)="toggleNav('nav-1')"
+            >About LeftHanded</a>
+                          <ul class="footer-nav-sub">
+                                  <li>
+                    <a href="#" class="footer-nav-link">About Us</a>
+                                      </li>
+                                  <li>
+                    <a href="#" class="footer-nav-link">Where to Buy</a>
+                                      </li>
+                
+                  
+                              </ul>
+                      </li>
+                  <li class="footer-nav-item">
+            <a
+              class="footer-nav-title"
+              [ngClass]="{ show: viewNav === 'nav-2' }"
+              (click)="toggleNav('nav-2')"
+            >Terms</a>
+                          <ul class="footer-nav-sub">
+                                  <li>
+                    <a href="#" class="footer-nav-link">Warranty</a>
+                                      </li>
+                                  <li>
+                    <a href="#" class="footer-nav-link">Shipping &amp; Delivery</a>
+                                      </li>
+                                  <li>
+                    <a href="#" class="footer-nav-link">Return &amp; Refund Policy</a>
+                                      </li>
+                                  <li>
+                    <a href="#" class="footer-nav-link">Terms &amp; Conditions</a>
+                                      </li>
+                                  <li>
+                    <a href="#" class="footer-nav-link">Privacy Policy</a>
+                                      </li>
+                              </ul>
+                      </li>
+                  <li class="footer-nav-item">
+            <a
+              class="footer-nav-title"
+              [ngClass]="{ show: viewNav === 'nav-3' }"
+              (click)="toggleNav('nav-3')"
+            >Get Help</a>
+                          <ul class="footer-nav-sub">
+                                  <li>
+                    <a href="#" class="footer-nav-link">Track Order</a>
+                                      </li>
+                                 
+                                  <li>
+                    <a href="#" class="footer-nav-link">Contact Us</a>
+                                      </li>
+                                 
+                                  <li>
+                    <a href="#" class="footer-nav-link">Product Authentication</a>
+                                      </li>
+                              </ul>
+                      </li>
+              </ul>
+    </div>
+          <div class="footer-app-mobile">
+    <h1 class="footer-app-title">Download LeftHanded store App</h1>
+    <p class="footer-app-content">Get access to app exclusive offer!</p>
+    <div class="footer-app-stores">
+      <button type="button" (click)="handleClickStore">
+        <img class="lazyload" alt="" data-src="https://cdn-static.oraimo.com/img/google-play-white.svg" />
+      </button>
+      <button type="button" (click)="handleClickStore">
+        <img class="lazyload" alt="" data-src="https://cdn-static.oraimo.com/img/app-store-white.svg" />
+      </button>
+    </div>
+  </div>
+    <div class="footer-copyright">
+    <img alt="LeftHanded Logo" src="assets/images/logo.png"/>
+    <p>©2025 LeftHanded Copyright.</p>
+  </div>
+      <a [hidden]="viewRobot" href="javascript:;" class="footer-robot  " (click)="handleClickRobot">
+    <img alt="" src="https://cdn-static.oraimo.com/img/icon-robot.svg?v=20240807" />
+  </a>
+    <button class="footer-backtotop" (click)="handleBackToTop" [ngClass]="{ show: viewBackToTop }">
+    <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+      <path d="M52 91.35V20.111l26.651 27.046 5.698-5.615L48.001 4.65l-36.35 36.892 5.698 5.615L44 20.111V91.35z"
+            fill="white"/>
+    </svg>
+  </button>
+</footer>

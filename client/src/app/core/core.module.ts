@@ -10,6 +10,9 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { BreadcrumbModule } from 'xng-breadcrumb';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { SharedModule } from '../shared/shared.module';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { FooterComponent } from './footer/footer.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 
@@ -19,7 +22,9 @@ import { SharedModule } from '../shared/shared.module';
     TestErrorComponent,
     NotFoundComponent,
     ServerErrorComponent,
-    SectionHeaderComponent
+    SectionHeaderComponent,
+    NavigationBarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -30,11 +35,14 @@ import { SharedModule } from '../shared/shared.module';
     }),
     BreadcrumbModule,
     NgxSpinnerModule,
-    SharedModule
+    SharedModule,
+    LazyLoadImageModule
   ],
   exports:[
     NavBarComponent,
+    NavigationBarComponent,
     SectionHeaderComponent,
+    FooterComponent,
     NgxSpinnerModule
   ]
 })

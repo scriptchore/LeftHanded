@@ -1,0 +1,58 @@
+.cart-no {
+    position: absolute;
+    width: 1.2em; /* Explicit width */
+    height: 1.2em; /* Explicit height */
+    border-radius: 50%; /* Ensures circle shape */
+    background: blue;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    top: -0.01em;
+    right: 2.7em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart-no:hover {
+    background: darkblue; /* Darker background on hover */
+}
+
+.cart-no:focus {
+    outline: 2px solid lightblue; /* Accessible focus style */
+    outline-offset: 2px; /* Keeps focus outline distinct */
+}
+
+a {
+    text-decoration: none;
+    color: #343a40;
+
+    &.active{
+        color: orange;
+    }
+}
+
+.logo {
+    cursor: pointer;
+}
+
+
+.mobile-menu-trigger {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu-trigger {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }  
+
+  .header-nav.mobile-active {
+    display: flex;
+  }
