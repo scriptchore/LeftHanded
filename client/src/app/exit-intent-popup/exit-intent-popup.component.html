@@ -1,0 +1,24 @@
+<div *ngIf="showPopup" id="ouibounce-modal" class="popup">
+  <div class="underlay" (click)="closePopup()"></div>
+
+  <div class="modal">
+    <div class="modal-title">
+      <h3>Pssst, Before You Go</h3>
+    </div>
+
+    <div class="modal-body">
+      <p>Special <span class="count">{{ discountPercentage }}%</span> discount just for you! <br> Limited-time offer!</p>
+      
+      <div class="discount">
+        <span>JUSTSAVE</span>
+        <p><small>DON'T FORGET to use this COUPON CODE before checkout!</small></p>
+      </div>
+
+      <a href="manage/order.html#10" class="modalbutton">Continue <span class="icon-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+    <div class="modal-footer">
+      <p (click)="closePopup()">No, thanks</p>
+    </div>
+  </div>
+</div>

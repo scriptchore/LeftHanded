@@ -11,11 +11,13 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
+import { ExitIntentPopupComponent } from './exit-intent-popup/exit-intent-popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrderDetailedComponent,
+    ExitIntentPopupComponent,
   ],
   imports: [
     BrowserModule,
