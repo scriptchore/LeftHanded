@@ -664,12 +664,12 @@ button:disabled {
     cursor: not-allowed
 }
 
-body {
+body, html{
     display: flex;
     flex-direction: column;
     font-family: Avenir Book, Noto Sans Regular, Arial;
     margin: 0 auto;
-    max-width: 750px;
+   
     min-height: 100vh;
     overflow-x: hidden;
     width: 100%
@@ -713,7 +713,6 @@ body {
 
 @media screen and (max-width:1279px) {
     .site-header {
-        max-width: 750px;
         position: static;
         top: 0;
         width: 100%;
@@ -889,7 +888,7 @@ body {
         position: fixed;
         top: 0;
         transition: left .3s linear;
-        width: 750px;
+       
         z-index: 3
     }
 
