@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "node_modules/bootswatch/dist/united/bootstrap.min.css",
@@ -41,7 +42,6 @@
               "node_modules/swiper/swiper-bundle.min.css",
               "src/styles.scss",
               "src/index3556.css"
-    
             ],
             "scripts": [
 
@@ -128,6 +128,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss",
               "src/index3556.css"
             ],
