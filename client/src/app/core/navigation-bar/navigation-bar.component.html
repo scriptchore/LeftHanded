@@ -1,297 +1,107 @@
+<header class="d-flex p-3  site-header fixed-top shadow-sm">
+ <nav class="navbar navbar-expand-md  header-content px-3 py-2 w-100 justify-content-between">
 
-<header id="header" class="site-header" [ngClass]="{ 'with-ad': viewAd }">
-           
-  <div class="header-main">
-<div class="header-content">
-<a class="header-logo" href="index.html">
-<img alt="LeftHanded logo1" src="assets/images/logo.png" />
-</a>
-<div class="header-category-container d-flex flex-md-row  align-items-center justify-content-between" [ngClass]="{ show: viewCategory }" v-touch:swipe.right="toggleCategory">
-<div class="header-category-header">
-<div>
-<a href="javascript:;" class="header-category">
-<span class="icon icon-quit"></span>
-</a>
-<a class="header-logo" href="index.html">
-<img alt="LeftHanded logo" src="assets/images/logo.png" />
-</a>
-</div>
-</div>
-
-<nav class="header-nav" v-show="!viewMobileUserCenter">
-<ul class="header-nav-top">
-
-<li>
-<a class="top-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-<span class="top-link-text">HOME</span>
-</a>
-</li>
-<li  >
-<a class="p-2" routerLink="/shop" routerLinkActive="active"
-class="top-link  sub"
-[ngClass]="{ show: viewSubNav === 'SUPPORT-804' }"
->
-<span class="top-link-text">SHOP</span>
-</a>
-  <div class="header-support-container" [ngClass]="{ show: viewSubNav === 'SUPPORT-804' }">
-  <a routerLink="/shop" routerLinkActive="active" class="header-support-item">
-<span>
-Best Seller
-          </span>
+    <div class="logo navbar-brand mx-auto d-md-block text-center" >
+      <a class="header-logo" href="index.html">
+        <img alt="LeftHanded" src="assets/images/logo.png" />
       </a>
-  <a routerLink="/shop" routerLinkActive="active" class="header-support-item">
-<span>
-New Arrival
-          </span>
-      </a>
-  <a routerLink="/shop" routerLinkActive="active" class="header-support-item">
-<span>
-VIP
-          </span>
-      </a>
-</div>
-</li>
-<li>
-<a routerLink="/shop" routerLinkActive="active" class="top-link  sub"
-[ngClass]="{ show: viewSubNav === 'PRODUCT-205' }">
-<span class="top-link-text">PRODUCTS</span>
-</a>
-  <div class="header-nav-container">
-<ul class="header-nav-sub" [ngClass]="{ show: viewSubNav === 'PRODUCT-205' }">
-    <li>
-<a href="" class="suber header-nav-link">
-  BackPack
-          </a>
-<a class="suber header-nav-toggle" href="javascript:;" [ngClass]="{ show: viewSuberNav === 'PRODUCT-206' }">
-            <span class="header-nav-text">Power</span>
-          </a>
-        <a class="header-nav-image" href="#">
-<img alt="BackPack" src="assets/images/pack1.jpg" />
-</a>
-                    <ul class="header-nav-suber" [ngClass]="{ show: viewSuberNav === 'PRODUCT-206' }">
-<li class="header-nav-all"><a href="#">ALL</a></li>
-            <li>
-<a href="#">
-                    <span class="header-nav-text">Back Packs</span>
-                    <span class="hot-cat-tag">HOT</span>
-                  </a>
-</li>
+    </div>
 
+    <!-- Mobile Hamburger -->
+    <button class="navbar-toggler d-md-none me-2 order-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <!-- Main Nav Bar -->
+    <div class="navbar collapse navbar-collapse justify-content-center d-md-flex d-none" id="mainNav">
+      <nav class="header-nav" v-show="!viewMobileUserCenter">
+        <ul class="header-nav-top d-flex flex-nowrap">
+          <li>
+            <a class="top-link nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <span class="top-link-text">HOME</span>
+            </a>
+          </li>
+          <li>
+            <a class="p-2" routerLink="/shop" routerLinkActive="active" class="top-link nav-link sub"
+              [ngClass]="{ show: viewSubNav === 'SUPPORT-804' }">
+              <span class="top-link-text">SHOP</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/shop" routerLinkActive="active" class="top-link nav-link sub"
+              [ngClass]="{ show: viewSubNav === 'PRODUCT-205' }">
+              <span class="top-link-text">PRODUCTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void()" class="top-link nav-link sub" [ngClass]="{ show: viewSubNav === 'SUPPORT-231' }">
+              <span class="top-link-text">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-
-          </ul>
-      </li>
-    <li>
-<a href="#" class="suber header-nav-link">
-Purse
-          </a>
-<a class="suber header-nav-toggle" href="javascript:;" [ngClass]="{ show: viewSuberNav === 'PRODUCT-212' }">
-            <span class="header-nav-text">Purse</span>
-          </a>
-        <a class="header-nav-image" href="#">
-<img alt="Purse" src="assets/cdn-img.oraimo.com/2024/08/15/SpaceBuds.jpg" />
-</a>
-                    <ul class="header-nav-suber" [ngClass]="{ show: viewSuberNav === 'PRODUCT-212' }">
-<li class="header-nav-all"><a href="#">ALL</a></li>
-            <li>
-<a href="#">
-                    <span class="header-nav-text">Wireless Stereo Earbuds</span>
-                    <span class="hot-cat-tag">HOT</span>
-                  </a>
-</li>
-
-
-
-
-
-          </ul>
-      </li>
-    <li>
-<a href="#" class="suber header-nav-link">
-Watches
-          </a>
-<a class="suber header-nav-toggle" href="javascript:;" [ngClass]="{ show: viewSuberNav === 'PRODUCT-229' }">
-            <span class="header-nav-text">Watches</span>
-          </a>
-        <a class="header-nav-image" href="#">
-<img alt="Watches" src="#" />
-</a>
-                    <ul class="header-nav-suber" [ngClass]="{ show: viewSuberNav === 'PRODUCT-229' }">
-<li class="header-nav-all"><a href="#">ALL</a></li>
-            <li>
-<a href="#">
-                    <span class="header-nav-text">Smart Watches</span>
-                    <span class="new-cat-tag">NEW</span>
-                  </a>
-</li>
-
-
-
-
-          </ul>
-      </li>
-    <li>
-<a href="#" class="suber header-nav-link">
-Personal Care
-          </a>
-<a class="suber header-nav-toggle" href="javascript:;" [ngClass]="{ show: viewSuberNav === 'PRODUCT-218' }">
-            <span class="header-nav-text">Personal Care</span>
-          </a>
-        <a class="header-nav-image" href="#">
-<img alt="Personal Care" src="assets/cdn-img.oraimo.com/NG/2024/11/15/OCL-560.png" />
-</a>
-                    <ul class="header-nav-suber" [ngClass]="{ show: viewSuberNav === 'PRODUCT-218' }">
-<li class="header-nav-all"><a href="#">ALL</a></li>
-
-
-
-
-
-          </ul>
-      </li>
-    <li>
-<a href="#" class="suber header-nav-link">
-Home Appliances
-          </a>
-<a class="suber header-nav-toggle" href="javascript:;" [ngClass]="{ show: viewSuberNav === 'PRODUCT-539' }" >
-            <span class="header-nav-text">Home Appliances</span>
-          </a>
-        <a class="header-nav-image" href="#">
-<img alt="Home Appliances" src="#" />
-</a>
-                    <ul class="header-nav-suber" [ngClass]="{ show: viewSuberNav === 'PRODUCT-539' }">
-<li class="header-nav-all"><a href="collections/home-appliances.html">ALL</a></li>
-            <li>
-<a href="#">
-                    <span class="header-nav-text">Vacuums</span>
-                  </a>
-</li>
-            
-          
-
-
-
-
-
-          </ul>
-      </li>
-  </ul>
-</div>
-</li>
-<li  >
-<a
-href="javascript:void()"
-class="top-link  sub"
-[ngClass]="{ show: viewSubNav === 'SUPPORT-231' }"
-
->
-<span class="top-link-text">CONTACT</span>
-</a>
-  <div class="header-support-container" [ngClass]="{ show: viewSubNav === 'SUPPORT-231' }">
-  <a href="#" class="header-support-item">
-<span>
-Track Order
-          </span>
-        <img class="header-support-banner" alt="Track Order" src="assets/cdn-img.oraimo.com/images/s1.png" />
-      </a>
-  <a href="#" class="header-support-item">
-<span>
-Visit Carlcare
-          </span>
-        <img class="header-support-banner" alt="Visit Carlcare" src="assets/cdn-img.oraimo.com/images/s2.png" />
-      </a>
-  <a href="#" class="header-support-item">
-<span>
-Product Authentication
-          </span>
-        <img class="header-support-banner" alt="Product Authentication" src="assets/cdn-img.oraimo.com/2024/08/01/scanhere.jpg" />
-      </a>
-</div>
-</li>
-
-
-</ul>
-</nav>
-</div>
-
-
-
-
-<div class="d-flex align-item-center  justify-content-between p-3 px-4 mb-3">
-
-
- 
-  <div class="d-flex align-item-center">
-
-  <div class="header-link-box">
-
-
-<a routerLink="/basket" class="position-relative header-link">
-  <i class="fa fa-shopping-cart fa-2x me-5 text-light"></i>
-<div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">{{getCount(basket.items)}}</div>
-</a>
-
-
-
-
-
-  <ng-container *ngIf="(accountService.currentUser$ | async) === null">
-    <a routerLink="/account/login" class="btn btn-outline-secondary me-2 header-link">Login</a>
-    <a routerLink="/account/register" class="btn btn-outline-secondary me-3 header-link">Sign Up</a>
-</ng-container>
-
-
-
-
-
-
-<ng-container *ngIf="accountService.currentUser$ | async as user">
-  <div class="dropdown ms-3 me-5 header-link" style="cursor: pointer;" dropdown>
-   <a dropdownToggle class="dropdown-toggle">
-     <strong>Welcome {{user.displayName}}</strong>
-   </a>
-
-   <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
-     <li class="py-1">
-       <a routerLink="/basket" class="dropdown-item">
-         <i class="fa fa-shopping-cart me-3"></i> View basket
-       </a>
-     </li>
-
-     <li class="py-1">
-       <a routerLink="/basket" class="dropdown-item">
-         <i class="fa fa-history me-3"></i> View orders
-       </a>
-     </li>
-     <div class="dropdown-divider"></div>
-
-
-     <li class="py-1">
-       <a (click)="accountService.logout()" class="dropdown-item">
-         <i class="fa fa-sign-out me-3"></i> Logout
-       </a>
-     </li>
-     
-   </ul>
+    <!-- Cart and Auth Section -->
+    <div class="d-flex align-item-center justify-content-between">
     
-  
-  </div>
-   
- </ng-container>
+        <div class="d-flex flex-nowrap header-link-box align-item-center justify-content-between auth-section">
+          <!-- Basket -->
+          <a routerLink="/basket" class="header-link">
+            <i class="fa fa-shopping-cart fa-2x me-5 text-light cart-icon"></i>
+            <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">{{getCount(basket.items)}}
+            </div>
+          </a>
 
+          <!-- If user not logged in  -->
+          <div class="d-flex flex-nowrap auth-buttons auth-cart-wrapper " >
+         
+            <ng-container *ngIf="(accountService.currentUser$ | async) === null">
+              <a routerLink="/account/login" class="btn btn-outline-secondary me-3 header-link">Login</a>
+              <a routerLink="/account/register" class="btn btn-outline-secondary me-3 header-link">Sign Up</a>
+            </ng-container>
+          </div>
 
-    
-</div>
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-</div>
+          <!-- Auth Dropdown for Small Screens -->
+          <div class="d-md-none dropdown auth-dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+             <i class="fa fa-user fa-2x text-light"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end animate-slide">
+              <li><a class="dropdown-item" routerLink="/account/login">Login</a></li>
+              <li><a class="dropdown-item" routerLink="/account/register">Sign Up</a></li>
+            </ul>
+          </div>
+      
+          <!-- If user logged in -->
+          <ng-container *ngIf="accountService.currentUser$ | async as user">
+            <div class="dropdown ms-3 me-5 header-link" style="cursor: pointer;" dropdown>
+              <a dropdownToggle class="dropdown-toggle">
+                <strong>Welcome {{user.displayName}}</strong>
+              </a>
+              <ul *dropdownMenu class="dropdown-menu dropdown-menu-end">
+                <li class="py-1">
+                  <a routerLink="/basket" class="dropdown-item">
+                    <i class="fa fa-shopping-cart me-2"></i> View basket
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a routerLink="/basket" class="dropdown-item">
+                    <i class="fa fa-history me-2"></i> View orders
+                  </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="py-1">
+                  <a (click)="accountService.logout()" class="dropdown-item">
+                    <i class="fa fa-sign-out me-2"></i> Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+        </div>
+    </div>
+  </nav>
 </header>
