@@ -4,15 +4,27 @@
     <div class="carousel-container"> 
 <carousel [isAnimated]="true">  
     <slide>
-        <img src="assets/images/hero1.jpg" class="img-fluid" alt="slide1" style="display: block; width:100%">
+        <picture>
+            <!-- Small screen (mobile) -->
+            <source media="(max-width: 750px)" srcset="assets/images/hero1_smaller.jpg">
+            <source media="(max-width: 900px)" srcset="assets/images/hero1_small.jpg">
+
+            <img src="assets/images/hero1.jpg" class="carousel-img" alt="slide1" style="display: block; width:100%">
+        </picture>
+    </slide>
+   
+    <slide>
+        <picture>
+             <source media="(max-width: 750px)" srcset="assets/images/hero2_smaller.jpg">
+            <source media="(max-width: 900px)" srcset="assets/images/hero2_small.jpg">
+            <img src="assets/images/hero2.jpg" class="carousel-img" alt="slide2" style="display: block; width:100%">
+        </picture>
     </slide>
 
     <slide>
-        <img src="assets/images/hero2.jpg"  class="img-fluid" alt="slide2" style="display: block; width:100%">
-    </slide>
-
-    <slide>
-        <img src="assets/images/hero3.jpg"  class="img-fluid" alt="slide3" style="display: block; width:100%">
+        <picture>
+            <img src="assets/images/hero3.jpg" class="carousel-img" alt="slide3" style="display: block; width:100%">
+        </picture>
     </slide>
 
     

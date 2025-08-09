@@ -11,6 +11,7 @@ import { BasketItem } from 'src/app/shared/models/basket';
 })
 export class NavigationBarComponent {
 
+mobileMenuOpen = false;
 viewCategory: any;
 /* viewSubNav: any;
 viewSuberNav: any; */
@@ -27,6 +28,25 @@ isMobile: boolean = false;
 onResize() {
   this.isMobile = window.innerWidth <= 768;
 }
+
+ // Mobile nav items
+  menuItems = [
+    { label: 'Home', link: '/', icon: 'fa fa-home' },
+    { label: 'Shop', link: '/shop', icon: 'fa fa-shopping-bag' },
+    { label: 'Products', link: '/products', icon: 'fa fa-cube' },
+    { label: 'Contact', link: '/contact', icon: 'fa fa-phone' }
+   
+  ];
+
+toggleMobileMenu(): void {
+    this.mobileMenuOpen = true;
+    document.body.classList.add('no-scroll');
+  }
+
+  closeMobileMenu(): void {
+    this.mobileMenuOpen = false;
+    document.body.classList.remove('no-scroll');
+  }
 
 toggleMobileNav() {
   this.showMobileNav = !this.showMobileNav;

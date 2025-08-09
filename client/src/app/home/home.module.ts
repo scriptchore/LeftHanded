@@ -13,6 +13,7 @@ import { IndexComponent } from './index/index.component';
     HomeComponent,
   ],
   imports: [
+
     CommonModule,
     SharedModule,
     IndexComponent

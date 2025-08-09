@@ -8,8 +8,7 @@
     </div>
 
     <!-- Mobile Hamburger -->
-    <button class="navbar-toggler d-md-none me-2 order-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-md-none me-2 order-0" type="button" data-bs-target="#mainNav" (click)="toggleMobileMenu()" >
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -105,3 +104,36 @@
     </div>
   </nav>
 </header>
+
+<!-- Slide-in Mobile Menu -->
+
+<div class="mobile-slide-menu" [class.active]="mobileMenuOpen">
+  <button class="close-btn" (click)="closeMobileMenu()">&times;</button>
+  <ul class="mobile-nav-list">
+
+     <li
+          class="menu-item animated-item"
+          *ngFor="let item of menuItems; let i = index"
+          [style.animationDelay]="(i * 0.1) + 's'"
+        >
+          <a [routerLink]="item.link" (click)="closeMobileMenu()">
+            <i [class]="item.icon + ' me-2'"></i> {{ item.label }}
+          </a>
+          <hr class="menu-divider" />
+ </li>
+    
+  </ul>
+</div>
+
+<!-- <div class="mobile-slide-menu" [class.active]="mobileMenuOpen">
+  <button class="close-btn" (click)="closeMobileMenu()">&times;</button>
+  <ul class="mobile-nav-list">
+    <li><a routerLink="/" (click)="closeMobileMenu()">HOME</a></li>
+    <li><a routerLink="/shop" (click)="closeMobileMenu()">SHOP</a></li>
+    <li><a routerLink="/products" (click)="closeMobileMenu()">PRODUCTS</a></li>
+    <li><a routerLink="/contact" (click)="closeMobileMenu()">CONTACT</a></li>
+  </ul>
+</div> -->
+
+<!-- Overlay -->
+<div class="mobile-menu-overlay" [class.active]="mobileMenuOpen" (click)="closeMobileMenu()"></div>

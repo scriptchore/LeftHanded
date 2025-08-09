@@ -1,13 +1,19 @@
-<div class="">
 
   <div class="swiper-box">
 
-    <swiper-container slides-per-view="4" space-between="20" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-      navigation pagination loop [breakpoints]="{
-        '0': { 'slidesPerView': 2, 'space-between': 10 },
-        '768': { 'slidesPerView': 3, 'spaceBetween': 15 },
-        '1024': { 'slidesPerView': 4, 'spaceBetween': 20 }
-      }">
+<swiper-container
+  slides-per-view="4"
+  space-between="20"
+  autoplay-delay="3000"
+  autoplay-disable-on-interaction="false"
+  navigation="true"
+  pagination="true"
+  loop="true"
+  breakpoints='{
+    "0": { "slidesPerView": 2, "spaceBetween": 10 },
+    "768": { "slidesPerView": 3, "spaceBetween": 15 },
+    "1024": { "slidesPerView": 4, "spaceBetween": 20 }
+  }'>
       <swiper-slide>
 
 
@@ -651,4 +657,3 @@
 
     </swiper-container>
   </div>
-</div>

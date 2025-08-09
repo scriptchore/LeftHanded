@@ -2,11 +2,12 @@
     height: 250px;
 }
 
-img{
-    object-fit:cover;
-    height: 600px;
+.carousel-img{
     width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
+
 
  .headerbox {
     margin: auto;
@@ -89,6 +90,8 @@ app-index,
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+
 
 
 app-index {
@@ -202,5 +205,15 @@ body{
 .parallax-content p {
     font-size: 1.2rem;
     color: #666;
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    display: none;
+  }
+
+
+ 
+
 }
 
